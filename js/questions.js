@@ -3,28 +3,6 @@
 
 export const originalQuizData = [
 	{
-		question: "¿Cuál es la función principal del menú 'Publish' en el contexto de R Markdown o Quarto?",
-		options: {
-			A: "Ejecutar todos los chunks de código del documento.",
-			B: "Formatear automáticamente el código fuente del documento.",
-			C: "Compartir el documento renderizado en servicios online como RPubs.",
-			D: "Guardar el documento en un formato específico como PDF o Word."
-		},
-		correctAnswer: "C",
-		explanation: "La función del menú Publish es precisamente permitir a los usuarios compartir sus documentos renderizados en servicios en línea como RPubs, lo que simplifica la difusión de análisis y resultados a una audiencia más amplia."
-	},
-	{
-		question: "Describe la función de los botones 'Source' y 'Visual' en el editor.",
-		options: {
-			A: "'Source' es para ver el código R y 'Visual' es para ver los gráficos generados.",
-			B: "'Source' es para editar archivos de datos y 'Visual' es para editar el texto.",
-			C: "Permiten alternar entre la vista del código fuente Markdown y una vista WYSIWYG (Lo que ves es lo que obtienes) más amigable para la edición.",
-			D: "'Source' compila el documento y 'Visual' lo abre en el navegador."
-		},
-		correctAnswer: "C",
-		explanation: "Los botones Source y Visual son fundamentales para la edición, permitiendo alternar fácilmente entre la manipulación directa del código fuente Markdown y una vista más visual y amigable (WYSIWYG), adaptándose a diferentes preferencias de edición."
-	},
-	{
 		question: "¿Cómo se genera un documento final (renderizado) en R Markdown o Quarto, y qué opciones de formato de salida existen?",
 		options: {
 			A: "Se utiliza el comando render() en la consola de R; solo se puede generar HTML por defecto.",
@@ -42,7 +20,7 @@ export const originalQuizData = [
 			B: "Es un bloque de configuración inicial del documento (YAML).",
 			C: "Es un bloque de código R incrustado, delimitado por marcadores, cuyo propósito es ejecutar código y mostrar sus resultados en el documento.",
 			D: "Es un enlace a un recurso externo o una imagen."
-		},
+		}, re
 		correctAnswer: "C",
 		explanation: "Un chunk es la parte central de la reproducibilidad: un bloque de código R (u otro lenguaje en Quarto) delimitado por ```{r} y ``` que se ejecuta durante el renderizado para incluir los resultados (código, texto, tablas, gráficos) directamente en el documento final."
 	},
@@ -69,28 +47,6 @@ export const originalQuizData = [
 		explanation: "La distinción es crucial para controlar qué se muestra en el documento. echo: false es útil cuando quieres mostrar solo el resultado de un cálculo o gráfico sin el código que lo generó. include: false oculta todo del chunk, útil para código que genera objetos que se usan más adelante pero no necesitas mostrar."
 	},
 	{
-		question: "Describe brevemente la separación entre las capas UI (interfaz de usuario) y Server en una aplicación Shiny.",
-		options: {
-			A: "La capa UI contiene el código R, y la capa Server define el diseño visual.",
-			B: "La capa UI maneja la lógica de base de datos, y la capa Server maneja la visualización.",
-			C: "Ambas capas contienen el mismo tipo de código R, pero se ejecutan en paralelo.",
-			D: "La capa UI define la apariencia y los elementos interactivos (inputs/outputs), mientras que la capa Server contiene la lógica de R que procesa datos y genera las salidas en respuesta a las interacciones."
-		},
-		correctAnswer: "D",
-		explanation: "Esta separación es el corazón de la arquitectura Shiny. UI se encarga de lo que el usuario ve e interactúa (botones, sliders, placeholders para gráficos), mientras que Server es el 'cerebro' que realiza los cálculos, filtra datos, genera gráficos y actualiza los elementos en la UI basándose en la actividad del usuario."
-	},
-	{
-		"question": "¿Qué herramientas se mencionan como facilitadoras para crear informes reproducibles con contenidos en ficheros de texto plano?",
-		"options": {
-			"A": "Microsoft Word y Excel.",
-			"B": "RStudio y CRAN.",
-			"C": "R Markdown y Quarto.",
-			"D": "Shiny y leaflet."
-		},
-		"correctAnswer": "C",
-		"explanation": "'R Markdown y Quarto permiten crear informes reproducibles', utilizando ficheros de texto plano que combinan código y texto explicativo."
-	},
-	{
 		"question": "¿Cómo se pueden insertar resultados de R de forma 'inline' dentro del texto en R Markdown o Quarto?",
 		"options": {
 			"A": "Usando el operador pipe (%>%).",
@@ -100,17 +56,6 @@ export const originalQuizData = [
 		},
 		"correctAnswer": "C",
 		"explanation": "La inserción inline de resultados de R 'utilizando tildes graves, la letra r y una expresión de R imprimible como cadena de texto (r expresion_de_R)'."
-	},
-	{
-		"question": "¿Qué librería de R se utiliza para la creación de gráficos, mencionada como punto de partida para este tema?",
-		"options": {
-			"A": "base.",
-			"B": "dplyr.",
-			"C": "ggplot2.",
-			"D": "tidyr."
-		},
-		"correctAnswer": "C",
-		"explanation": "El texto, 'R para Ciencia de Datos',  introduce el tema de gráficos diciendo que 'ggplot2 es una librería de R utilizada para la creación de gráficos'."
 	},
 	{
 		"question": "¿Cuál es la función inicial que se llama para comenzar a crear un gráfico con ggplot2, y qué se especifica en ella?",

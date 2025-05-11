@@ -418,7 +418,7 @@ function endQuiz(timeRanOut) {
 	summarySection.classList.add('summary-section');
 
 	const summaryTitle = document.createElement('h3');
-	summaryTitle.textContent = 'Resumen de Preguntas Respondidas';
+	summaryTitle.textContent = 'Resumen de preguntas respondidas';
 	summarySection.appendChild(summaryTitle);
 
 	// Iterar sobre el número de preguntas intentadas (attemptedQuestionsCount)
@@ -438,7 +438,7 @@ function endQuiz(timeRanOut) {
 			// Encontrar el texto de la respuesta correcta usando la clave
 			const correctAnswerText = questionData.options[questionData.correctAnswer];
 			// Mostrar solo el texto de la respuesta correcta sin la letra indicadora
-			correctAnswerElement.innerHTML = `<span class="correct-answer">Respuesta Correcta: ${correctAnswerText}</span>`;
+			correctAnswerElement.innerHTML = `<span class="correct-answer">Respuesta correcta: ${correctAnswerText}</span>`;
 			summaryItem.appendChild(correctAnswerElement);
 
 			const explanationElement = document.createElement('p');
