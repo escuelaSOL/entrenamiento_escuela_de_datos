@@ -20,7 +20,7 @@ export const originalQuizData = [
 			B: "Es un bloque de configuración inicial del documento (YAML).",
 			C: "Es un bloque de código R incrustado, delimitado por marcadores, cuyo propósito es ejecutar código y mostrar sus resultados en el documento.",
 			D: "Es un enlace a un recurso externo o una imagen."
-		}, re
+		},
 		correctAnswer: "C",
 		explanation: "Un chunk es la parte central de la reproducibilidad: un bloque de código R (u otro lenguaje en Quarto) delimitado por ```{r} y ``` que se ejecuta durante el renderizado para incluir los resultados (código, texto, tablas, gráficos) directamente en el documento final."
 	},
