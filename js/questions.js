@@ -78,6 +78,5 @@ export const originalQuizData = [
 		},
 		"correctAnswer": "C",
 		"explanation": "El texto 'R para Ciencia de Datos', indica que 'Las instrucciones en ggplot2 suelen seguir con el operador + para añadir más capas al gráfico'."
-	},
-
+	}
 ];
